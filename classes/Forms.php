@@ -78,7 +78,7 @@ class Forms {
 			foreach( $row as $col_key => $col ) {
 				$col_class_field = '';
 				foreach( $col as $field ) {
-					$col_class_field .= 'wpf-row-' . wpfval( $field, 'name' );
+					$col_class_field .= ' wpf-row-' . wpfval( $field, 'name' );
 				}
 				reset( $col );
 				$col_class = "row_$row_key-col_$col_key " . $col_class_field . ' ' . apply_filters( 'wpforo_col_classes', '', $row_key, $col_key );
